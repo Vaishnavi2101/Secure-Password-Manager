@@ -1,0 +1,216 @@
+/* Add these styles to your existing CSS */
+
+/* Prevent scrolling on the entire page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* This prevents scrolling */
+}
+
+.kindle3d-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Dark overlay */
+    url('/images/login-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 1px 60px;
+}
+
+.kindle3d-login-card {
+  background-color: #2c323a;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  width: 500px; /* Fixed width instead of percentage */
+  max-width: none; /* Remove max-width restriction */
+  text-align: center;
+  margin-left: 0; /* Ensure no automatic margins */
+  margin-right: auto; /* Push to left */
+}
+
+
+
+.kindle3d-header h1 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.kindle3d-header h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.kindle3d-header p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #2c323a;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  color: #fff;
+}
+
+.social-btn:hover {
+  background-color: #343a40;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  margin-right: 12px;
+  position: relative;
+}
+
+.checkbox.checked {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+}
+
+.checkbox.checked::after {
+  content: '✓';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.google {
+  color: #fff;
+}
+
+.apple {
+  color: #fff;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #444;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  background-color: #2c323a;
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.forgot-password a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.forgot-password span {
+  font-size: 16px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #1558d6;
+}
+
+.signup-link {
+  margin-top: 25px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
